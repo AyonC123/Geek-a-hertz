@@ -1,5 +1,7 @@
+/* IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+/* GLOBALS */
 * {
 	margin: 0;
 	padding: 0;
@@ -12,6 +14,7 @@ a {
 	outline: none;
 }
 
+/* NAVBAR */
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -36,4 +39,29 @@ nav {
 	font-weight: bold;
 	outline: none;
 	border-bottom: 2px black solid;
+}
+
+/* FOOTER */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1.5px grey solid;
+	padding-top: 10px;
+}
+
+/* HOME */
+main {
+	padding: 2em;
+}
+
+.intro {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.text {
+	width: 50%;
 }
