@@ -59,6 +59,7 @@ app.get("/post/:blogId", function (req, res) {
 
 		if (id == otherId) {
 			res.render("post", {
+        id: fr.id,
 				HowManyTitlesDoWeWant: fr.title,
 				author: fr.author,
 				WhenYouRunOutOfContent: fr.content,
