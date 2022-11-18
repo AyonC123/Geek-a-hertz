@@ -9,8 +9,11 @@
 	</head>
 	<body>
 		<%- include("partials/header"); -%>
-        <h1><%= HowManyTitlesDoWeWant %></h1>
-        <p><%= WhenYouRunOutOfContent %></p>
+		<div class="post">
+			<h1><%= HowManyTitlesDoWeWant %></h1>
+			<h2><%= author %></h2>
+			<p><%= WhenYouRunOutOfContent %></p>
+		</div>
 
 		<%- include("partials/footer"); -%>
 	</body>

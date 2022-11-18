@@ -14,23 +14,24 @@
 				<div class="text">
 					<h1>Hello</h1>
 					<p><%= HomeStarters %></p>
+					<a href="/compose" class="compose">Create New</a>
 				</div>
 				<img src="/text.png" alt="Blog image" height="200" width="350" />
 			</div>
 			<div class="blogs">
 				<h1>Blogs</h1>
 				<div class="cards">
-					<% if (DaBlog !== undefined){ %> <% DaBlog.forEach(function(idk) { %>
+					<% if (DaBlog.length !== 0){ %> <% DaBlog.forEach(function(idk) { %>
 					<div class="card">
 						<h2><%=idk.title %></h1>
-						<h3>By - <%= idk.author %></h2>
+						<h4>By - <%= idk.author %></h2>
 						<p>
 							<%=idk.content.substring(0, 100) + " .." %>
 							<a href="/post/<%=idk.id%>">Read More</a>
 						</p>
 					</div>
-					<% })}else { %>
-					<h1>No current Blog</h1>
+					<% })} else { %>
+					<h2>No current Blog</h2>
 					<% }%>
 				</div>
 			</div>
