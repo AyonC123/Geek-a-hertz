@@ -18,6 +18,15 @@
 				<img src="/text.png" alt="Blog image" height="200" width="350" />
 			</div>
 		</main>
+
+		<% DaBlog.forEach(function(idk) { %>
+			<h1><%=idk.title %></h1>
+			<p>
+			<%=idk.content.substring(0, 250) + " .." %>
+			<a href = "/post/<%=idk.title%>">Read More</a>
+			</p>
+			<% });	%>
+
 		<%- include("partials/footer"); -%>
 	</body>
 </html>
