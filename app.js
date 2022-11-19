@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const port = 3000;
 const app = express();
+const fs = require("fs");
 
 const HomeStarters =
 	"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo id cumque esse voluptas blanditiis iure quia ullam ipsa soluta in magnam nostrum a totam eos quidem, eum saepe dolores maiores.";
@@ -16,7 +17,8 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-let blogs = [];
+let blogs = JSON.parse(fs.readFileSync("./data/blogs.json"));
+
 app.get("/", function (req, res) {
 	res.render("home", {
 		HomeStarters: HomeStarters,
@@ -48,6 +50,7 @@ app.post("/compose", function (req, res) {
 	} else {
 		blogs.unshift(blog);
 	}
+	fs.writeFile("./data/blogs.json", JSON.stringify(blogs, null, 4), (e) => {});
 	res.redirect("/");
 });
 
@@ -59,7 +62,7 @@ app.get("/post/:blogId", function (req, res) {
 
 		if (id == otherId) {
 			res.render("post", {
-        id: fr.id,
+				id: fr.id,
 				HowManyTitlesDoWeWant: fr.title,
 				author: fr.author,
 				WhenYouRunOutOfContent: fr.content,
