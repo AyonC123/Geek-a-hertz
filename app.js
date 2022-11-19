@@ -89,6 +89,10 @@ app.get("/post/:blogId", function (req, res) {
 	});
 });
 
+app.get('*', (req, res) => {
+  res.render('err')
+});
+
 app.listen(port, () => {
 	console.log(`Server running at http://localhost:${port}`);
 });

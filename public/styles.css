@@ -145,6 +145,16 @@ main {
 	padding-bottom: 1.5em;
 }
 
+/* ERROR */
+.err {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 10%;
+}
+
 /* MEDIA QUERY */
 @media screen and (max-width: 765px) {
 	.intro {
