@@ -123,6 +123,10 @@ main {
 	color: rgb(40, 40, 40);
 }
 
+.card a {
+  color: rgb(61, 61, 61);
+}
+
 /* ABOUT */
 .aText {
 	margin-inline: 25%;
