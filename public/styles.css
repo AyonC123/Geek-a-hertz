@@ -38,6 +38,14 @@ nav {
 	padding: 1em;
 }
 
+.mobileNav {
+	display: none;
+}
+
+.mobileLinks {
+	display: none;
+}
+
 .links {
 	display: flex;
 	justify-content: space-between;
@@ -64,6 +72,7 @@ footer {
 	align-items: center;
 	border-top: 1.5px grey solid;
 	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /* HOME */
@@ -134,4 +143,64 @@ main {
 .post p {
 	padding-top: 1em;
 	padding-bottom: 1.5em;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 765px) {
+	.intro {
+		flex-direction: column-reverse;
+	}
+
+	.card {
+		flex-basis: 35%;
+	}
+
+	.text {
+		width: 100%;
+	}
+
+	.intro {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.links {
+		display: none;
+	}
+
+	img {
+		height: 10em;
+		width: 15em;
+	}
+	.mobileNav {
+		font-weight: bold;
+		z-index: 2;
+		cursor: pointer;
+		display: flex;
+	}
+
+	.button {
+		font-size: 2em;
+	}
+
+	.visible {
+		display: flex;
+	}
+	.mobileLinks {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 7%;
+		right: 0;
+		width: 100%;
+		padding: 5% 0;
+		background-color: #d3d3d3e2;
+		box-shadow: 0 0 0 100vmax #d3d3d3e2;
+		gap: 1em;
+	}
+
+	.input-group textarea {
+		width: 50%;
+	}
 }
