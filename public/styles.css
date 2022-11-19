@@ -199,8 +199,4 @@ main {
 		box-shadow: 0 0 0 100vmax #d3d3d3e2;
 		gap: 1em;
 	}
-
-	.input-group textarea {
-		width: 50%;
-	}
 }
