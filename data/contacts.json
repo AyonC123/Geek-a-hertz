@@ -1,7 +1,23 @@
 [
-	{
-		"name": "Lorem Ipsum",
-		"email": "loremipsum@lorem.com",
-		"msg": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis neque et ante lacinia, eu finibus leo aliquam. In ullamcorper."
-	}
+    {
+        "name": "nn",
+        "email": "nn@gmail.com"
+    },
+    {
+        "name": "Admin",
+        "email": "admin@deeznutz.com"
+    },
+    {
+        "name": "Admin",
+        "email": "admin@deeznutz.com"
+    },
+    {
+        "name": "Admin",
+        "email": "admin@deeznutz.com"
+    },
+    {
+        "name": "Lorem Ipsum",
+        "email": "loremipsum@lorem.com",
+        "msg": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis neque et ante lacinia, eu finibus leo aliquam. In ullamcorper."
+    }
 ]

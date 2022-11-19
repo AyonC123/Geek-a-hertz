@@ -145,6 +145,10 @@ main {
 	padding-bottom: 1.5em;
 }
 
+.post h2 {
+  color: rgb(40, 40, 40);
+}
+
 /* ERROR */
 .err {
   display: flex;
