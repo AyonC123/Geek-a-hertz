@@ -1,9 +1,5 @@
 [
     {
-        "name": "john doe",
-        "email": "johndoe@gmail.com"
-    },
-    {
         "name": "Lorem Ipsum",
         "email": "loremipsum@lorem.com",
         "msg": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis neque et ante lacinia, eu finibus leo aliquam. In ullamcorper."
