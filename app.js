@@ -77,32 +77,10 @@ app.get("/post/:blogId", function(req, res) {
     const otherId = fr.id;
 
     if (id == otherId) {
-      res.render("post", {fr});
+      res.render("post", fr);
     }
   });
 });
-
-app.get("/api/contacts", (req, res) => {
-  res.json(contacts)
-})
-
-app.get("/api/contacts/:name", (req, res) => {
-    let data = contacts.filter((contact) => {
-    return contact.name.toLowerCase().includes(req.params.name.toLowerCase()) == true;
-  });
-  res.json(data)
-})
-
-app.get("/api/blogs", (req, res) => {
-  res.json(contacts)
-})
-
-app.get("/api/blogs/:title", (req, res) => {
-    let data = blogs.filter((blog) => {
-    return blog.title.toLowerCase().includes(req.params.title.toLowerCase()) == true;
-  });
-  res.json(data)
-})
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
