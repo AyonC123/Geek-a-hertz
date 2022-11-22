@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>About</title>
-		<link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-	</head>
-	<body>
-		<%- include("partials/header"); -%>
-		<div class="flexColumn">
-			<h1 class="flex">About</h1>
-			<p class="aText"><%= aboutStarters %></p>
-		</div>
-		<%- include("partials/footer"); -%>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <%- include("partials/header"); -%>
+    <div class="flexColumn">
+      <h1 class="flex">About</h1>
+      <p class="aText"><%= aboutStarters %></p>
+    </div>
+	<div class = "imgdiv">
+		<img class = "img" src = "/img.jpeg">
+	</div>
+    <%- include("partials/footer"); -%>
+  </body>
 </html>
