@@ -16,7 +16,7 @@ form {
 .input-group label {
   font-size: 0.9rem;
   font-weight: bold;
-  color: navy;
+  color: black;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -38,7 +38,8 @@ form {
 .input-group input[type="email"]:active,
 .input-group select:focus,
 .input-group select:active {
-  border-color: #2977f5;
+  /* border-color: #2977f5; */
+  border-color: rgb(26, 26, 26);
 }
 
 .input-group:last-child {
